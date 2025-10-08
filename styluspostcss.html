@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylus és PostCSS</title>
+    <link rel="stylesheet" href="stypost.css">
+</head>
+<body>
+    <h1>Stylus 🎨</h1>
+    <h2 class="h2">A Stylus egy CSS preprocessor, amely lehetővé teszi a hatékonyabb, olvashatóbb és újrafelhasználhatóbb CSS írását.</h2>
+    <div class="container">
+        <div class="card1">
+        <h2>Fő jellemzők:</h2>
+        <ul>
+            <li>Változók, függvények, keverékek (mixins) és öröklődés támogatása</li>
+            <li>Nincs szükség pontosvesszőkre, kapcsos zárójelekre – a szintaxis nagyon rugalmas</li>
+            <li>Beépített matematikai műveletek (pl. width = 100% / 3)</li>
+            <li>Tiszta, Python-szerű szintaxis is használható (de a klasszikus CSS-szerű is támogatott)</li>
+        </ul>
+        </div>
+        <div class="card2">
+            <h2>Példa:</h2>
+            <p>$primary = #3498db <br>
+                <br>
+                body <br>
+                  &emsp; font &nbsp;14px Helvetica, Arial, sans-serif <br>
+                  &emsp; color &nbsp;$primary
+                </p>
+        </div>
+    </div>
+    <h1>🛠️ PostCSS</h1>
+    <h2 class="h2">A PostCSS nem egy preprocessor, hanem egy CSS feldolgozó eszköz, amely a CSS fájlokat átalakítja pluginok segítségével..</h2>
+    <div class="container">
+        <div class="card1">
+        <h2>Fő jellemzők:</h2>
+        <ul>
+            <li>Plugin-alapú rendszer – mindent pluginok csinálnak</li>
+            <li>Lehetőség modern CSS használatára régebbi böngészők támogatásával</li>
+            <li>Autoprefixer (legnépszerűbb plugin) automatikusan hozzáadja a szükséges vendor prefixeket</li>
+            <li>Teljesen testreszabható: saját pluginokat is írhatsz</li>
+        </ul>
+        </div>
+        <div class="card2">
+            <h2>Egyszerű PostCSS konfig (postcss.config.js):</h2>
+            <p>module.exports = {
+                <br>
+                &emsp;plugins: [ <br>
+                  &nbsp;  &nbsp; &nbsp; &nbsp;  require('autoprefixer'),sans-serif <br>
+                  &nbsp; &nbsp;  &nbsp; &nbsp;    require('postcss-nested'), <br>
+                    &nbsp;  &nbsp;  ] <br>
+            }
+             </p>
+        </div>
+    </div>
+    <h2 class="kozep">Összehasonlítás</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Tulajdonság</th>
+            <th>Stylus</th>
+            <th>PostCSS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Név">Típus</td>
+            <td data-label="Életkor">Preprocesszor</td>
+            <td data-label="Osztály">CSS processzor (plugin alapú)</td>
+          </tr>
+          <tr>
+            <td data-label="Név">Szintaxis</td>
+            <td data-label="Életkor">Saját (nem szabványos CSS)</td>
+            <td data-label="Osztály">Szabványos CSS + pluginok</td>
+          </tr>
+          <tr>
+            <td data-label="Név">Bővíthetőség</td>
+            <td data-label="Életkor">Alapból sok beépített funkció</td>
+            <td data-label="Osztály">Teljesen plugin-alapú, rugalmas</td>
+          </tr>
+          <tr>
+            <td data-label="Név">Használati cél</td>
+            <td data-label="Életkor">Rövidebb, logikusabb CSS írása</td>
+            <td data-label="Osztály">Modern CSS támogatása, optimalizálás</td>
+          </tr>
+          <tr>
+            <td data-label="Név">Böngésző támogatás</td>
+            <td data-label="Életkor">Transzpilál CSS-t régi böngészőkhöz is</td>
+            <td data-label="Osztály">Autoprefixer segítségével ez is megoldható</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>

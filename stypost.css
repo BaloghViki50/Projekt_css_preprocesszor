@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+
+.h2 {
+    text-align: center;
+}
+body {
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div {
+    font-size: larger;
+    padding: 15px;
+}
+
+.card1 {
+    width: 900px;
+    height: 280px;
+    background-color: rgb(226, 226, 226);
+    border: 2px solid #333;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold
+}
+
+.card2 {
+    width: 800px;
+    height: 280px;
+    background-color: rgb(226, 226, 226);
+    border: 2px solid #333;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 360px;
+    margin: 20px;
+    border: 5px solid gray;
+    gap: 40px;
+    background-color: #dddddd;
+}
+
+@keyframes myAnimation {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #acadad;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background-color: #acadad;
+      color: white;
+    }
+
+    td {
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      font-weight: bold;
+    }
+  }
+
+  .kozep {
+    text-align: center;
+    font-size: x-large;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+  }
