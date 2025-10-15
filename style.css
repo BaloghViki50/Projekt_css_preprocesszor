@@ -1,0 +1,63 @@
+
+.card1 {
+    width: 900px;
+    height: 280px;
+    background-color: rgb(228, 228, 228);
+    border: 2px solid #333;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold
+}
+
+.card2 {
+    width: 850px;
+    height: 280px;
+    background-color: rgb(228, 228, 228);
+    border: 2px solid #333;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 360px;
+    margin: 20px;
+    border: 5px solid rgb(128, 128, 128);
+    gap: 40px;
+    background-color: #b3b3b3;
+    padding: 15px;
+    color: black;
+}
+
+.container:hover {
+    transform: scale(1.01) rotateY(1deg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+h1 {
+    width: fit-content;  /* vagy pl. egy fix szélesség */
+    margin: 0 auto;      /* vízszintesen középre igazítás */
+    text-align: center;  /* a szöveg is középre */
+  }
+
+body {
+    background-color: rgb(48, 48, 66);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    padding: 15px;
+}
+a {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
