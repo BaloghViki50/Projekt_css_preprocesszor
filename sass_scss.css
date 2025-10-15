@@ -1,0 +1,131 @@
+body {
+    font-family:Verdana, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  div {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  div:hover {
+    transform: scale(1.03) rotateY(2deg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 15px;
+  }
+  
+  li {
+    margin: 8px 0;
+    position: relative;
+  }
+  
+  li::before {
+    content: "▹";
+    color: #00d4ff;
+    position: absolute;
+    left: -15px;
+  }
+  
+  div:first-of-type::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(270deg, #00d4ff, #0072ff, #00d4ff);
+    background-size: 600% 600%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: border-flow 6s linear infinite;
+  }
+  
+  @keyframes border-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  div:hover h2, div:hover h3, h1 {
+    animation: float 1.2s ease-in-out infinite;
+  }
+
+  @media (max-width: 800px) {
+    div {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  

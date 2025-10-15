@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sass & scss</title>
+    <link rel="stylesheet" href="./sass_scss.css">
+</head>
+<body>
+    <h1>Preprocessorok</h1>
+    <div>
+        <h2>SASS & SCSS</h2>
+        <p>A SASS és az SCSS egyaránt a SASS (Syntactically Awesome Stylesheets) előfeldolgozó szintaxisa, amelyek mindegyike olyan továbbfejlesztett funkciókat kínál, amelyek kiterjesztik a hagyományos CSS képességeit. Bár mindkettő ugyanazokat a funkciókat kínálja, szintaxisuk eltérő, így a fejlesztők eltérő preferenciáit is kielégíti.</p>
+    </div>
+
+    <div>
+        <h3>SCSS</h3>
+        <p>Az SCSS (Sassy CSS) a SASS egy szintaxisa, amely CSS-szerű struktúrát alkalmaz. Ez megkönnyíti a CSS-sel már ismerkedő fejlesztők számára az átállást a SASS által kínált haladó funkciók, például a változók, a mixinek és a beágyazás használatára. Az SCSS fájlok kiterjesztése .scss, és teljes mértékben kompatibilisek a szabványos CSS-sel, ami azt jelenti, hogy bármilyen érvényes CSS-t használhatsz egy SCSS fájlban.<p>
+            <ul>
+                <li>Változók: Az egységes stílus érdekében tároljon újrafelhasználható értékeket, például színeket és betűtípusokat.</li>
+                <li>Beágyazás: A CSS szelektorok hierarchikus módon ágyazódnak be a jobb olvashatóság érdekében.</li>
+                <li>Mixins: Újrafelhasználható stílusblokkok létrehozása az ismétlődő kód elkerülésével.</li>
+                <li>Öröklődés: Az @extend használatával megoszthatja a stílusokat a szelektorok között, ami leegyszerűsíti a kódbázist.</li>
+                <li>Részleges stílusok és importálás: Moduláris CSS az @import használatával, így a stílusok rendezettek és karbantarthatók maradnak.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h3>SASS</h3>
+        <p>A Sass a legnépszerűbb és legrégebbi CSS előfeldolgozó, amely eredetileg 2006-ban jelent meg. Alkotóit, Natalie Weizenbaumot és Hampton Catlint a Haml sablonnyelv ihlette, amely dinamikus funkciókat ad a HTML-hez. Céljuk az volt, hogy hasonló dinamikus funkciókat valósítsanak meg a CSS-ben is. Így hát létrehoztak egy CSS előfeldolgozót, és Syntactically Awesome Style Sheets-nek nevezték el.</p>
+        <p>A Sass előfeldolgozó lehetővé teszi számunkra változók, if/else utasítások, for/while/each ciklusok, öröklődés, operátorok, interpoláció, mixin-ek és egyéb dinamikus funkciók használatát, majd a kódot egyszerű CSS-sé fordítjuk, amelyet a webböngészők értelmezni tudnak.</p>
+        <h4>Előnyök: </h4>
+        <ul>
+            <li>jól bevált, stabil CSS előfeldolgozó</li>
+            <li>A fordítás könnyebbé vált a Dart Sass bevezetésével</li>
+            <li>nagy ökoszisztémával rendelkezik</li>
+            <li>fejlett dinamikus funkciók</li>
+            <li>két szintaxis közül választhatsz (Sass és SCSS - lásd az alábbi példákat)</li>
+            <li>kiterjedt dokumentáció</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>LESS</h3>
+        <p>A LESS-t három évvel a Sass után, 2009-ben adta ki Alexis Sellier. A Sass befolyásolta, így számos funkcióját megvalósítja, mint például a mixineket, a változókat és a beágyazást. Vicces módon később a LESS is hatással volt a Sass-re, mivel az újabb SCSS szintaxist a LESS szintaxisa ihlette.</p>
+        <p>A LESS CSS előfeldolgozó egy JavaScript könyvtár, amely kibővíti a CSS alapértelmezett funkcióit. Mivel JavaScriptben van megírva, futtathatod npm csomagként , vagy lefordíthatod a LESS-t közvetlenül a böngészőben .lessfájlok és a LESS konverter hozzáadásával a HTML oldalad szakaszához.</p>
+        <h4>Előnyök: </h4>
+        <ul>
+            <li>közvetlenül hozzáadható egy HTML oldalhoz</li>
+            <li>lapos tanulási görbe, mivel a LESS a standard CSS szintaxist használja (lásd az alábbi példákat)</li>
+            <li>számos dinamikus funkció, beleértve a hatókörbe tartozó változókat, importálási opciókat, mixineket, beágyazott szelektorokat és egyebeket</li>
+            <li>bővítményeken keresztül bővíthető</li>
+            <li>részletes dokumentáció</li>
+        </ul>
+    </div>
+</body>
+</html>
